@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">博客详情</title>
+    <link rel="icon" href="../static/images/icon.png" th:href="@{/images/icon.png}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <style type="text/css">
+        .snow-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100001;
+        }
+    </style>
+
+</head>
+<body>
+<!--导航-->
+
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" style="opacity: 0.7;">
+    <div class="snow-container"></div>
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+
+            <a href="#" th:href="@{/}"><h1 class="ui olive header item" style="font-family: STSong">FlyBlog</h1></a>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i
+                    class=" home icon"></i>首页</a>
+            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i
+                    class=" idea icon"></i>分类</a>
+            <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i
+                    class=" tags icon"></i>标签</a>
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i
+                    class=" clone icon"></i>归档</a>
+            <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i
+                    class=" info icon"></i>关于我</a>
+            <div class="music right m-item item m-mobile-hide">
+                <!--内嵌网易云播放器-->
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=52
+                        src="//music.163.com/outchain/player?type=2&id=22754969&auto=1&height=32"></iframe>
+                <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+
+                    <div class="searhdiv ui icon inverted input m-margin-tb-tiny">
+                        <input class="search" type="text" name="query" placeholder="Search...." th:value="${query}">
+                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-large-footer" style="opacity: 0.7">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <!--grid栅格样式-->
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image"
+                             alt=""
+                             style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div id="newblog-container">
+                    <div class="ui inverted link list" th:fragment="newblogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin"
+                           th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin" th:text="#{index.email}">Email：1285242825@qq.com</a>
+                    <a href="#" class="item m-text-thin">QQ：1285242825</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">
+                    这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider" style="margin: 18px"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 Designed by Wangjinghui</p>
+        <div style="color: #F08047;margin-top: -15px;" class="ui inverted m-text-thin m-text-spaced">小破站已安全营业：<span
+                id="htmer_time" class="item m-text-thin"></span> (*๓´╰╯`๓)
+        </div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">闽ICP备2020022023号</p>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012302000129"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="../static/images/beian.png" th:src="@{/images/wechat.png}"style="float:left;"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">闽公网安备 35012302000129号</p></a>
+        </div>
+    </div>
+</footer>
+
+<th:block th:fragment="script">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js"
+            th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
+    <script opacity='0.9' zIndex="-2" count="99"
+            src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+    <!--鼠标点击爱心-->
+    <script src="/js/love.js"></script>
+    <!--Live-2D看板娘模型-->
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    <script>
+        //Live-2D看板娘模型
+        L2Dwidget.init({
+            model: {
+                //jsonpath控制显示那个小萝莉模型，下面这个就是我觉得最可爱的小萝莉模型 //hijiki  //izumi //shizuku //koharu
+                jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json", //这里改模型，前面后面都要改
+                scale: 1,
+            },
+            display: {
+                position: "left", //设置看板娘的上下左右位置
+                width: 120,  //小萝莉的宽度
+                height: 200, //小萝莉的高度
+                hOffset: -20,  //水平偏移
+                vOffset: 0  //垂直偏移
+            },
+            mobile: {
+                show: false,  //在移动端不显示
+                scale: 0.4    //移动设备上的缩放
+            },
+            react: {
+                opacityDefault: 0.9, //设置透明度
+                opacityOnHover: 0.2
+            },
+        });
+
+
+        // 运行时间统计
+        function secondToDate(second) {
+            if (!second) {
+                return 0;
+            }
+            var time = new Array(0, 0, 0, 0, 0);
+            if (second >= 365 * 24 * 3600) {
+                time[0] = parseInt(second / (365 * 24 * 3600));
+                second %= 365 * 24 * 3600;
+            }
+            if (second >= 24 * 3600) {
+                time[1] = parseInt(second / (24 * 3600));
+                second %= 24 * 3600;
+            }
+            if (second >= 3600) {
+                time[2] = parseInt(second / 3600);
+                second %= 3600;
+            }
+            if (second >= 60) {
+                time[3] = parseInt(second / 60);
+                second %= 60;
+            }
+            if (second > 0) {
+                time[4] = second;
+            }
+            return time;
+        }
+
+        function setTime() {
+            /*此处为网站的创建时间*/
+            var create_time = Math.round(new Date(Date.UTC(2020, 10, 11, 15, 15, 15)).getTime() / 1000);
+            var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+            currentTime = secondToDate((timestamp - create_time));
+            currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+            document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+        }
+
+        setInterval(setTime, 1000);
+    </script>
+
+    <!--雪花特效-->
+    <script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>
+    <script src="http://www.lmlblog.com/blog/12/js/Snow.js"></script>
+
+</th:block>
+</body>
+</html>

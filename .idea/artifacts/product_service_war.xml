@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="product-service:war">
+    <output-path>$PROJECT_DIR$/../How2j-SpringCloud/product-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>product-service</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="product-service-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="product-service:war exploded" />
+    </root>
+  </artifact>
+</component>

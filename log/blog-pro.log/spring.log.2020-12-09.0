@@ -1,0 +1,34 @@
+2020-12-09 21:05:50.090  INFO 8564 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 8564 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-09 21:05:50.095  INFO 8564 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: pro
+2020-12-09 21:05:51.319  WARN 8564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 21:05:52.601  INFO 8564 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 2.597 seconds (JVM running for 993.36)
+2020-12-09 21:09:15.739  INFO 8564 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 8564 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-09 21:09:15.740  INFO 8564 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: pro
+2020-12-09 21:09:16.752  WARN 8564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 21:09:16.885  INFO 47064 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 47064 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-09 21:09:16.887  INFO 47064 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-09 21:09:18.406  INFO 8564 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 2.757 seconds (JVM running for 1199.164)
+2020-12-09 21:09:20.195  WARN 47064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 21:09:25.164  INFO 47064 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 8.905 seconds (JVM running for 10.22)
+2020-12-09 21:22:15.263  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-09 21:22:15.264  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-09 21:22:15.291  WARN 8564 --- [http-nio-8088-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-09 21:22:15.300  WARN 8564 --- [http-nio-8088-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-09 21:22:15.310  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-09 21:22:15.310  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-09 21:22:15.929  INFO 8564 --- [http-nio-8088-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-09 21:22:15.929  INFO 8564 --- [http-nio-8088-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-09 21:22:15.958  INFO 8564 --- [http-nio-8088-exec-3] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-09 21:22:15.958  INFO 8564 --- [http-nio-8088-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-09 21:22:19.733  INFO 8564 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-09 21:22:19.734  INFO 8564 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-09 21:22:19.744  INFO 8564 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-09 21:22:19.744  INFO 8564 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-09 21:33:06.118  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-09 21:33:06.119  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-09 21:33:06.126  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-09 21:33:06.126  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-09 21:38:31.389  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-09 21:38:31.389  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-09 21:38:31.398  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-09 21:38:31.398  INFO 8564 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----

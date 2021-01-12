@@ -1,0 +1,325 @@
+2020-12-08 09:02:39.729  INFO 47040 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 47040 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-08 09:02:39.832 DEBUG 47040 --- [restartedMain] com.wjh.BlogApplication                  : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-12-08 09:02:39.833  INFO 47040 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: dev
+2020-12-08 09:02:39.951  INFO 47040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-08 09:02:39.951  INFO 47040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-08 09:02:40.939  INFO 47040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-08 09:02:41.070  INFO 47040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 5 JPA repository interfaces.
+2020-12-08 09:02:42.236  INFO 47040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-08 09:02:42.254  INFO 47040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-08 09:02:42.255  INFO 47040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-08 09:02:42.385  INFO 47040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-08 09:02:42.386  INFO 47040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2434 ms
+2020-12-08 09:02:42.631  INFO 47040 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-08 09:02:42.714  INFO 47040 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-08 09:02:42.794  INFO 47040 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-08 09:02:42.926  WARN 47040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-08 09:02:42.998  INFO 47040 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-08 09:02:43.167  INFO 47040 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-08 09:02:43.370  INFO 47040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-08 09:02:43.382  INFO 47040 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-08 09:02:43.406  INFO 47040 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-12-08 09:02:43.815  INFO 47040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-08 09:02:43.874  INFO 47040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-08 09:02:43.876  INFO 47040 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-08 09:02:44.501  INFO 47040 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-08 09:02:44.512  INFO 47040 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-08 09:02:45.351  INFO 47040 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-08 09:02:45.361  INFO 47040 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 6.716 seconds (JVM running for 9.663)
+2020-12-08 09:05:20.472  INFO 47040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-08 09:05:20.473  INFO 47040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-08 09:05:20.488  INFO 47040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-12-08 09:05:20.534  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:05:20.535  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:05:20.654  WARN 47040 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-08 09:05:20.674  WARN 47040 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-08 09:05:20.685  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:05:20.685  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:05:21.764  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:05:21.765  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:05:21.772  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:05:21.772  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:28.404  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:06:28.406  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:28.430  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:06:28.431  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:28.940  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:06:28.940  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:28.947  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:06:28.947  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:39.938  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-08 09:06:39.941  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:40.005  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}types
+2020-12-08 09:06:40.005  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:40.518  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:06:40.518  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:40.524  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:06:40.524  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:43.583  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-08 09:06:43.584  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:43.611  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Result : {}tags
+2020-12-08 09:06:43.612  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:44.340  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:06:44.340  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:44.345  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:06:44.345  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:47.675  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.ArchiveShowController.archives', args=[{}]}
+2020-12-08 09:06:47.676  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:47.699  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}archives
+2020-12-08 09:06:47.699  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:48.130  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:06:48.130  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:48.136  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:06:48.137  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:51.837  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:06:51.839  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:51.844  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:06:51.845  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:06:52.325  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:06:52.326  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:06:52.332  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:06:52.332  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:08:47.771  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:08:47.772  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:08:47.772  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:08:47.772  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:08:48.691  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:08:48.692  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:08:48.712  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:08:48.712  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:11.533  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:09:11.534  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:11.556  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:09:11.556  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:12.044  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:09:12.044  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:12.049  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:09:12.050  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:26.753  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-08 09:09:26.754  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:26.764  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}tags
+2020-12-08 09:09:26.764  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:27.194  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:09:27.194  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:27.202  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:09:27.203  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:32.209  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:09:32.209  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:32.209  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:09:32.209  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:32.637  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:09:32.637  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:32.642  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:09:32.643  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:09:39.508  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:09:39.508  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:09:39.515  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:09:39.515  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:13:29.803  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:13:29.804  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:13:29.807  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:13:29.807  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:13:48.896  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:13:48.897  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:13:48.901  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:13:48.901  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:13:59.901  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:13:59.901  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:13:59.906  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:13:59.906  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:14:54.100  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:14:54.101  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:14:54.108  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:14:54.108  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:01.758  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:16:01.758  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:01.761  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:16:01.761  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:06.206  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:16:06.207  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:06.223  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:16:06.223  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:06.685  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:16:06.685  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:06.690  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:16:06.690  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:14.817  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-08 09:16:14.818  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:14.830  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}types
+2020-12-08 09:16:14.830  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:15.419  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:16:15.419  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:15.425  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:16:15.425  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:18.603  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.ArchiveShowController.archives', args=[{}]}
+2020-12-08 09:16:18.604  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:18.619  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Result : {}archives
+2020-12-08 09:16:18.619  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:19.048  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:16:19.048  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:19.053  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:16:19.053  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:22.896  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:16:22.898  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:22.899  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:16:22.899  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:23.310  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:16:23.310  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:23.314  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:16:23.315  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:16:28.290  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:16:28.290  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:16:28.293  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:16:28.294  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:17:08.490  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:17:08.490  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:17:08.496  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:17:08.496  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:17:21.167  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:17:21.167  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:17:21.181  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:17:21.181  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:17:21.743  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:17:21.743  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:17:21.750  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:17:21.750  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:15.717  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:18:15.718  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:15.745  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:18:15.745  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:16.231  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:18:16.231  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:16.236  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:18:16.236  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:33.290  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:18:33.290  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:33.305  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:18:33.305  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:33.822  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:18:33.822  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:33.830  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:18:33.830  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:39.771  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.ArchiveShowController.archives', args=[{}]}
+2020-12-08 09:18:39.772  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:39.785  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Result : {}archives
+2020-12-08 09:18:39.785  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:40.204  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:18:40.204  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:40.208  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:18:40.208  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:43.278  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:18:43.279  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:43.281  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:18:43.282  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:43.695  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:18:43.695  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:43.700  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:18:43.700  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:18:48.990  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:18:49.001  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:18:49.005  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:18:49.005  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:19:08.374  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 啊, {}]}
+2020-12-08 09:19:08.374  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:19:08.377  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:19:08.378  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:19:12.143  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 女, {}]}
+2020-12-08 09:19:12.144  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:19:12.148  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:19:12.148  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:19:16.708  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:19:16.709  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:19:16.728  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:19:16.728  INFO 47040 --- [http-nio-8080-exec-8] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:19:17.151  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:19:17.151  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:19:17.155  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:19:17.155  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:19:24.300  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], java, {}]}
+2020-12-08 09:19:24.300  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:19:24.309  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:19:24.310  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:06.347  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], java, {}]}
+2020-12-08 09:26:06.348  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:06.354  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:26:06.354  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:10.965  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], , {}]}
+2020-12-08 09:26:10.966  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:10.974  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:26:10.974  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:16.215  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:26:16.215  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:16.222  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:26:16.223  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:29.328  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:26:29.328  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:29.331  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:26:29.331  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:40.221  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:26:40.221  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:40.223  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:26:40.223  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:50.141  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博客, {}]}
+2020-12-08 09:26:50.141  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:50.148  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:26:50.148  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:55.591  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:26:55.592  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:55.614  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:26:55.614  INFO 47040 --- [http-nio-8080-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:26:56.070  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:26:56.070  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:26:56.076  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:26:56.076  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:19.018  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:31:19.019  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:19.045  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:31:19.046  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:19.613  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:31:19.613  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:19.619  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:31:19.619  INFO 47040 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:28.779  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:31:28.786  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:28.787  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:31:28.787  INFO 47040 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:29.166  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:31:29.166  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:29.172  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:31:29.172  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:32.345  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 博, {}]}
+2020-12-08 09:31:32.346  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:32.353  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:31:32.355  INFO 47040 --- [http-nio-8080-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:39.035  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], ., {}]}
+2020-12-08 09:31:39.040  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:39.047  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:31:39.047  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:55.875  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 大女, {}]}
+2020-12-08 09:31:55.878  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:55.890  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:31:55.890  INFO 47040 --- [http-nio-8080-exec-4] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:31:58.957  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], , {}]}
+2020-12-08 09:31:58.957  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:31:58.962  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}search
+2020-12-08 09:31:58.963  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:32:24.597  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-08 09:32:24.597  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:32:24.599  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-08 09:32:24.599  INFO 47040 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:32:25.005  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:32:25.005  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:32:25.013  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:32:25.013  INFO 47040 --- [http-nio-8080-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:32:46.439  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-08 09:32:46.441  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:32:46.466  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-08 09:32:46.466  INFO 47040 --- [http-nio-8080-exec-5] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:32:46.901  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-08 09:32:46.901  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-08 09:32:46.908  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-08 09:32:46.908  INFO 47040 --- [http-nio-8080-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-08 09:39:22.716  INFO 47040 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-08 09:39:22.722  INFO 47040 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-08 09:39:22.725  INFO 47040 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-08 09:39:22.731  INFO 47040 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

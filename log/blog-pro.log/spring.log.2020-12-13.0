@@ -1,0 +1,62 @@
+2020-12-13 00:25:51.672  INFO 54964 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 54964 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 00:25:51.676  INFO 54964 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-13 00:25:54.607  WARN 54964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 00:25:57.937  INFO 54964 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 6.799 seconds (JVM running for 7.971)
+2020-12-13 00:39:48.190  INFO 36856 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 36856 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 00:39:48.192  INFO 36856 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-13 00:39:51.145  WARN 36856 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 00:39:55.508  INFO 36856 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 7.918 seconds (JVM running for 9.098)
+2020-12-13 00:45:10.983  INFO 53456 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 53456 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 00:45:10.984  INFO 53456 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-13 00:45:13.823  WARN 53456 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 00:45:17.007  INFO 53456 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 6.544 seconds (JVM running for 7.725)
+2020-12-13 00:50:21.115  INFO 45184 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 45184 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 00:50:21.116  INFO 45184 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-13 00:50:23.979  WARN 45184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 00:50:27.298  INFO 45184 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 6.707 seconds (JVM running for 7.968)
+2020-12-13 00:55:53.849  INFO 54164 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 54164 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 00:55:53.853  INFO 54164 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: pro
+2020-12-13 00:55:56.507  WARN 54164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 00:55:58.609  INFO 54164 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 5.614 seconds (JVM running for 7.029)
+2020-12-13 00:58:31.853  INFO 54164 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-13 00:58:31.855  INFO 54164 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 00:58:31.978  WARN 54164 --- [http-nio-8088-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-13 00:58:31.998  WARN 54164 --- [http-nio-8088-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-13 00:58:32.007  INFO 54164 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-13 00:58:32.007  INFO 54164 --- [http-nio-8088-exec-10] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 00:58:32.670  INFO 54164 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-13 00:58:32.671  INFO 54164 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 00:58:32.679  INFO 54164 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-13 00:58:32.679  INFO 54164 --- [http-nio-8088-exec-7] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 00:58:33.478  INFO 54164 --- [http-nio-8088-exec-6] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-13 00:58:33.478  INFO 54164 --- [http-nio-8088-exec-6] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 00:58:33.481  INFO 54164 --- [http-nio-8088-exec-6] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-13 00:58:33.481  INFO 54164 --- [http-nio-8088-exec-6] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 00:58:34.010  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-13 00:58:34.010  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 00:58:34.022  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-13 00:58:34.022  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 00:59:35.831  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-13 00:59:35.831  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 00:59:35.832  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-13 00:59:35.832  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 00:59:36.909  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-13 00:59:36.910  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 00:59:36.926  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-13 00:59:36.926  INFO 54164 --- [http-nio-8088-exec-9] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 01:00:58.174  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.AboutShowController.about', args=[]}
+2020-12-13 01:00:58.174  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 01:00:58.175  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : Result : {}about
+2020-12-13 01:00:58.175  INFO 54164 --- [http-nio-8088-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 01:00:59.388  INFO 54164 --- [http-nio-8088-exec-4] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8088/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-13 01:00:59.388  INFO 54164 --- [http-nio-8088-exec-4] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-13 01:00:59.424  INFO 54164 --- [http-nio-8088-exec-4] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-13 01:00:59.424  INFO 54164 --- [http-nio-8088-exec-4] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-13 01:01:51.089  INFO 54164 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 54164 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 01:01:51.089  INFO 54164 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: pro
+2020-12-13 01:01:54.524  WARN 54164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 01:01:55.057  INFO 49488 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 49488 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-13 01:01:55.058  INFO 49488 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-13 01:01:57.358  INFO 54164 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 6.505 seconds (JVM running for 365.778)
+2020-12-13 01:02:00.334  WARN 49488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-13 01:02:06.888  INFO 49488 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 13.15 seconds (JVM running for 16.78)

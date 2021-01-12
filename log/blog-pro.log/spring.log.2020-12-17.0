@@ -1,0 +1,8 @@
+2020-12-17 00:06:50.064  INFO 13776 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 13776 (started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-17 00:06:50.067  INFO 13776 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2020-12-17 00:06:52.968  WARN 13776 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-17 00:06:56.239  INFO 13776 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 6.728 seconds (JVM running for 7.98)
+2020-12-17 21:13:53.670  INFO 12920 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 12920 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-17 21:13:53.674  INFO 12920 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: pro
+2020-12-17 21:13:57.132  WARN 12920 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-17 21:13:59.698  INFO 12920 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 7.074 seconds (JVM running for 10.634)

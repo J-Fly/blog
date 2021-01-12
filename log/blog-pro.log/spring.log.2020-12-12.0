@@ -1,0 +1,4 @@
+2020-12-12 18:07:44.882  INFO 52820 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 52820 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-12 18:07:44.891  INFO 52820 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: pro
+2020-12-12 18:07:48.293  WARN 52820 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-12 18:07:50.553  INFO 52820 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 6.369 seconds (JVM running for 9.487)

@@ -1,0 +1,4 @@
+2021-01-07 21:32:39.612  INFO 26604 --- [main] com.wjh.BlogApplicationTests             : Starting BlogApplicationTests on LAPTOP-6KF36B08 with PID 26604 (started by 12852 in D:\Idea\ideaSouce\blog)
+2021-01-07 21:32:39.616  INFO 26604 --- [main] com.wjh.BlogApplicationTests             : The following profiles are active: pro
+2021-01-07 21:32:42.924  WARN 26604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-07 21:32:46.297  INFO 26604 --- [main] com.wjh.BlogApplicationTests             : Started BlogApplicationTests in 7.147 seconds (JVM running for 8.418)

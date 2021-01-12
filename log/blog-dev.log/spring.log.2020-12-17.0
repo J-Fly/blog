@@ -1,0 +1,61 @@
+2020-12-17 21:19:21.001  INFO 17708 --- [restartedMain] com.wjh.BlogApplication                  : Starting BlogApplication on LAPTOP-6KF36B08 with PID 17708 (D:\Idea\ideaSouce\blog\target\classes started by 12852 in D:\Idea\ideaSouce\blog)
+2020-12-17 21:19:21.007 DEBUG 17708 --- [restartedMain] com.wjh.BlogApplication                  : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-12-17 21:19:21.007  INFO 17708 --- [restartedMain] com.wjh.BlogApplication                  : The following profiles are active: dev
+2020-12-17 21:19:21.076  INFO 17708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-17 21:19:21.079  INFO 17708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-17 21:19:22.124  INFO 17708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-17 21:19:22.219  INFO 17708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 5 JPA repository interfaces.
+2020-12-17 21:19:23.101  INFO 17708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-17 21:19:23.112  INFO 17708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-17 21:19:23.113  INFO 17708 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-17 21:19:23.227  INFO 17708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-17 21:19:23.227  INFO 17708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2147 ms
+2020-12-17 21:19:23.412  INFO 17708 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 21:19:23.465  INFO 17708 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-17 21:19:23.528  INFO 17708 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-12-17 21:19:23.670  WARN 17708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-17 21:19:23.690  INFO 17708 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-17 21:19:23.806  INFO 17708 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-17 21:19:23.985  INFO 17708 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-17 21:19:24.005  INFO 17708 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-12-17 21:19:24.045  INFO 17708 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-17 21:19:24.390  INFO 17708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-17 21:19:24.438  INFO 17708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-17 21:19:24.441  INFO 17708 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-17 21:19:24.958  INFO 17708 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-17 21:19:24.966  INFO 17708 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-17 21:19:25.729  INFO 17708 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-17 21:19:25.739  INFO 17708 --- [restartedMain] com.wjh.BlogApplication                  : Started BlogApplication in 5.435 seconds (JVM running for 6.852)
+2020-12-17 21:19:43.105  INFO 17708 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 21:19:43.106  INFO 17708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-17 21:19:43.118  INFO 17708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-12-17 21:19:43.157  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-17 21:19:43.157  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-17 21:19:43.270  WARN 17708 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-17 21:19:43.291  WARN 17708 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-17 21:19:43.298  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-17 21:19:43.299  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-17 21:19:44.487  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-17 21:19:44.488  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-17 21:19:44.493  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-17 21:19:44.493  INFO 17708 --- [http-nio-8080-exec-2] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-17 21:20:13.199  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-17 21:20:13.200  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-17 21:20:13.220  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-17 21:20:13.220  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-17 21:20:13.654  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-17 21:20:13.654  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-17 21:20:13.662  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-17 21:20:13.663  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-17 21:20:34.341  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-17 21:20:34.343  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-17 21:20:34.365  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : Result : {}index
+2020-12-17 21:20:34.366  INFO 17708 --- [http-nio-8080-exec-3] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-17 21:20:34.819  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wjh.web.IndexController.newblogs', args=[{}]}
+2020-12-17 21:20:34.819  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doBefore------
+2020-12-17 21:20:34.826  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : Result : {}_fragments :: newblogList
+2020-12-17 21:20:34.826  INFO 17708 --- [http-nio-8080-exec-1] com.wjh.aspect.LogAspect                 : ------doAfter-----
+2020-12-17 22:38:55.888  INFO 17708 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-17 22:38:55.897  INFO 17708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-17 22:38:55.901  INFO 17708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-17 22:38:55.906  INFO 17708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
